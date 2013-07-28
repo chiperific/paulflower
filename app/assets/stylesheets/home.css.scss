@@ -1,7 +1,44 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+@import "bootstrap-responsive";
 
 body {
  	background-image: image-url('bgpattern.png');
  }
+
+// Carousel
+#myCarousel {
+	padding: 1em 10em;
+}
+
+.item > img {
+ 	height: 20em;
+ 	width: 100%;
+ 	z-index: 1;
+}
+
+.carousel-caption {
+	background: none;
+}
+
+.carousel-control {
+	margin: 0em 3em;
+}
+
+//share bar
+
+#myLinks {
+
+}
+
+.well-hole {
+	background: rgba(255,255,255,.3);
+	width: 21%;
+	border-radius: 15px;
+}
+
+.well-hole > i {
+	margin: 0em .2em;
+}
