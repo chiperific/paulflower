@@ -25,10 +25,6 @@ group :production do
   gem 'rails_12factor' #for Heroku
 end
 
-#group :production do
-#  gem 'pg'
-#end
-
 group :doc do
   gem 'sdoc', '0.3.20', :require => false
 end

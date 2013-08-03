@@ -8,6 +8,27 @@ body {
  	background-image: image-url('bgpattern.png');
  }
 
+ //share bar
+
+#myLinks {
+
+}
+
+.well-hole {
+	display: block;	
+	position: fixed;
+	top: 1em;
+	right: 3em;
+	background: rgba(255,255,255,.3);
+	width: 16%;
+	border-radius: 15px;
+	z-index: 5;
+}
+
+.well-hole > i {
+	margin: 0em .2em;
+}
+
 // Carousel
 #myCarousel {
 	padding: 1em 10em;
@@ -25,20 +46,4 @@ body {
 
 .carousel-control {
 	margin: 0em 3em;
-}
-
-//share bar
-
-#myLinks {
-
-}
-
-.well-hole {
-	background: rgba(255,255,255,.3);
-	width: 21%;
-	border-radius: 15px;
-}
-
-.well-hole > i {
-	margin: 0em .2em;
 }
