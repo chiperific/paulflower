@@ -2,5 +2,11 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(document).ready ->
+ready = ->
+  $('#tabs').find('a').on "click", ->
+    msgbox $(this).attr()
+    event.preventDefault
   $('.carousel').carousel()
+
+$(document).ready(ready)
+$(document).on('page:load', ready)

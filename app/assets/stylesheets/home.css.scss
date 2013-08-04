@@ -51,14 +51,21 @@ body {
 	margin: 0em 3em;
 }
 
-// main content: 
-
+//social media aggregator rebelMouse 
 .padded {
 	display: inline-block;
 	width: 90%;
 	padding: 0% 5%;
 }
 
+// main content tabs
+.nav-tabs > li > a {
+	border: 1px solid white;
+	background-color: rgba(255,255,255,.3);
+//	border-radius: 5px;
+}
+
+// footer
 .footer {
 	padding: 0% 5%;
 	width: 90%
