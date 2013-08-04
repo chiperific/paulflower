@@ -6,6 +6,7 @@
 
 body {
  	background-image: image-url('bgpattern.png');
+ 	width: 100%;
  }
 
  //share bar
@@ -53,7 +54,12 @@ body {
 // main content: 
 
 .padded {
-	display: block;
-	width: 100%;
-	padding: 0em 3em;
+	display: inline-block;
+	width: 90%;
+	padding: 0% 5%;
+}
+
+.footer {
+	padding: 0% 5%;
+	width: 90%
 }
