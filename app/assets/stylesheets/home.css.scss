@@ -68,6 +68,14 @@ body {
 	width: 100%;
 }
 
+.hideable {
+	display: none;
+}
+
+div#Author {
+	display: inherit;
+}
+
 .outline_pad {
 	margin: 10%;
 	width: 80%

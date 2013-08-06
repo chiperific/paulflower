@@ -56,7 +56,7 @@
       </ul>
     </div>
     <div class="row-fluid" id="hideable">
-      <div id="Author">
+      <div id="Author" class="hideable">
         <div class="span3">
           <%= image_tag "bookcover_brainsurgery.png", alt: "The Reedeming Power of Brain Surgery", id: "cover_brainsurgery" %>
         </div>
@@ -64,7 +64,7 @@
           <p>Author content</p>
         </div>
       </div> <!-- ./Author -->
-      <div id="Writer" class="hidden">
+      <div id="Writer" class="hideable">
         <div class="row-fluid">
           <div class="span2">
             <%= image_tag "dkblue-dots.jpg", class: "outline_pad" %>
@@ -90,9 +90,10 @@
           </div>
         </div>
       </div> <!-- ./Writer -->
-      <div id="Runner" class="hidden">
+      <div id="Runner" class="hideable">
+        <p>Runner content</p>
       </div> <!-- ./Runner -->
-      <div id="CreatDir" class="hidden">
+      <div id="CreatDir" class="hideable">
         <p>Creative Director content</p>
       </div> <!-- ./Michigander -->
     </div> <!-- ./hideable -->

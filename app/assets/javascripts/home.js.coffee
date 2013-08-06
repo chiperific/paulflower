@@ -8,8 +8,9 @@ ready = ->
     $(this).parent('li').addClass('active')
     div_id = $(this).attr('id')
     divvy = $('div#' + div_id)
-    divvy.removeClass('hidden')
-    divvy.siblings().addClass('hidden')
+    #divvy.removeClass('hidden')
+    #divvy.siblings().addClass('hidden')
+    divvy.siblings().fadeOut( 200 , -> divvy.fadeIn(2000))
     event.preventDefault()
 
   $('.carousel').carousel()
