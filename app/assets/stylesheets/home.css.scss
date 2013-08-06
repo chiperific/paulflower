@@ -62,8 +62,17 @@ body {
 .nav-tabs > li > a {
 	border: 1px solid white;
 	background-color: rgba(255,255,255,.3);
-//	border-radius: 5px;
 }
+
+#hideable > div > div > img {
+	width: 100%;
+}
+
+.outline_pad {
+	margin: 10%;
+	width: 80%
+}
+
 
 // footer
 .footer {

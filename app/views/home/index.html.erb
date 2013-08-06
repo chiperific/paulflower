@@ -1,9 +1,9 @@
 <div id="myLinks" class="links">
   <div class="well-hole">
     <%= mail_to "paulflower34@gmail.com", '<i class="icon-envelope icon-3x"></i>'.html_safe %>
-    <%= link_to '<i class="icon-facebook-sign icon-3x"></i>'.html_safe, "https://www.facebook.com/paul.flower.35" %>
-    <%= link_to '<i class="icon-twitter-sign icon-3x"></i>'.html_safe, "https://twitter.com/intent/follow?&screen_name=flowerpaul" %>
-    <%= link_to '<i class="icon-linkedin-sign icon-3x"></i>'.html_safe, "www.linkedin.com/pub/paul-flower/12/28/257" %>
+    <%= link_to '<i class="icon-facebook-sign icon-3x"></i>'.html_safe, "http://www.facebook.com/paul.flower.35", target: "blank" %>
+    <%= link_to '<i class="icon-twitter-sign icon-3x"></i>'.html_safe, "http://twitter.com/intent/follow?&screen_name=flowerpaul", target: "blank" %>
+    <%= link_to '<i class="icon-linkedin-sign icon-3x"></i>'.html_safe, "http://www.linkedin.com/pub/paul-flower/12/28/257", target: "blank" %>
   </div>
 <div id="myCarousel" class="carousel slide">
   <div class="carousel-inner">
@@ -38,28 +38,66 @@
 </div><!-- /.carousel -->
 </div><!-- /.links -->
 <div class='padded row-fluid'>
-  <div class='span9'>
+  <div class='span9' id="mainContent">
     <div class-"row-fluid">
       <ul class="nav nav-tabs" id="tabs">
         <li class="active">
-          <%= link_to "Author", "#" %>
+          <%= link_to "Author", "#", class: "tab", id: "Author" %>
         </li>
         <li>
-          <%= link_to "Writer", "#" %>
+          <%= link_to "Writer", "#", class: "tab", id: "Writer" %>
         </li>
         <li>
-          <%= link_to "Runner", "#" %>
+          <%= link_to "Runner", "#", class: "tab", id: "Runner" %>
         </li>
         <li>
-          <%= link_to "Michigander", "#" %>
+          <%= link_to "Creative Director", "#", class: "tab", id: "CreatDir" %>
         </li>
       </ul>
     </div>
-    <div class-"row-fluid">
-
-    </div>
-  </div>
+    <div class="row-fluid" id="hideable">
+      <div id="Author">
+        <div class="span3">
+          <%= image_tag "bookcover_brainsurgery.png", alt: "The Reedeming Power of Brain Surgery", id: "cover_brainsurgery" %>
+        </div>
+        <div class="span9">
+          <p>Author content</p>
+        </div>
+      </div> <!-- ./Author -->
+      <div id="Writer" class="hidden">
+        <div class="row-fluid">
+          <div class="span2">
+            <%= image_tag "dkblue-dots.jpg", class: "outline_pad" %>
+          </div>
+          <div class="span10">
+            <p>Portfolio item 1 content</p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <%= image_tag "blue-dots.jpg", class: "outline_pad" %>
+          </div>
+          <div class="span10">
+            <p>Portfolio item 2 content</p>
+          </div>
+        </div>
+        <div class="row-fluid">
+          <div class="span2">
+            <%= image_tag "green-dots.jpg", class: "outline_pad" %>
+          </div>
+          <div class="span10">
+            <p>Portfolio item 3 content</p>
+          </div>
+        </div>
+      </div> <!-- ./Writer -->
+      <div id="Runner" class="hidden">
+      </div> <!-- ./Runner -->
+      <div id="CreatDir" class="hidden">
+        <p>Creative Director content</p>
+      </div> <!-- ./Michigander -->
+    </div> <!-- ./hideable -->
+  </div> <!-- ./mainContent -->
   <div class='span3 rebelmouse'>
     <script type="text/javascript" class="rebelmouse-embed-script" src="https://www.rebelmouse.com/static/js-build/embed/embed.js?site=chiperific&height=430&flexible=0&post_limit=8&embed_type=sidebar&scrollbar_theme=dark&theme=14"></script>
-  </div>
+  </div> <!-- ./rebelmouse -->
 </div>

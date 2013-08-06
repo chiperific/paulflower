@@ -3,9 +3,15 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 ready = ->
-  $('#tabs').find('a').on "click", ->
-    msgbox $(this).attr()
-    event.preventDefault
+  $('.tab').on "click", ->
+    $(this).parents('ul#tabs').children('li').removeClass('active')
+    $(this).parent('li').addClass('active')
+    div_id = $(this).attr('id')
+    divvy = $('div#' + div_id)
+    divvy.removeClass('hidden')
+    divvy.siblings().addClass('hidden')
+    event.preventDefault()
+
   $('.carousel').carousel()
 
 $(document).ready(ready)
