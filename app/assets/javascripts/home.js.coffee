@@ -15,5 +15,19 @@ ready = ->
 
   $('.carousel').carousel()
 
+  if document.documentElement.clientWidth < 768
+    $('ul#tabs').removeClass('nav-tabs').addClass('nav-pills')
+
+  if document.documentElement.clientWidth > 767
+    $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
+
+resize = ->
+  if document.documentElement.clientWidth < 768
+    $('ul#tabs').removeClass('nav-tabs').addClass('nav-pills')
+
+  if document.documentElement.clientWidth > 767
+    $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
+
 $(document).ready(ready)
 $(document).on('page:load', ready)
+$(window).resize(resize)

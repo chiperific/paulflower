@@ -9,17 +9,18 @@ body {
  	width: 100%;
  }
 
- //share bar
+.carousel-caption {
+	background: none;
+}
+
 .well-hole {
 	display: block;	
 	position: fixed;
-	top: 1em;
-	right: 3em;
 	background: rgba(255,255,255,.7);
-	width: 15.5%;
 	border-radius: 10px;
 	padding-left: .4em;
 	z-index: 5;
+	width: 224px;
 }
 
 .well-hole > a {
@@ -32,58 +33,91 @@ body {
 	color: rgb(40,80,120);
 }
 
-// Carousel
-#myCarousel {
-	padding: 2em 10em;
+@media (min-width: 768px) {
+	//share bar
+	.well-hole {
+		top: 1em;
+		right: 3em;
+	}
+
+	// Carousel
+	#myCarousel {
+		padding: 2em 5em;
+	}
+
+	.item > img {
+	 	height: 20em;
+	 	width: 100%;
+	 	z-index: 1;
+	}
+
+	.carousel-control {
+		margin: 0em 1em;
+	}
+
+	//social media aggregator rebelMouse 
+	.padded {
+		display: inline-block;
+		width: 90%;
+		padding: 0% 5%;
+	}
+
+	// main content tabs
+	#tabs > li > a {
+		border: 1px solid white;
+		background-color: rgba(255,255,255,.3);
+	}
+
+	#hideable > div > div > img {
+		width: 100%;
+	}
+
+	.hideable {
+		display: none;
+	}
+
+	div#Author {
+		display: inherit;
+	}
+
+	.outline_pad {
+		margin: 10%;
+		width: 80%
+	}
+
+
+	// footer
+	.footer {
+		padding: 0% 5%;
+		width: 90%
+	}
 }
 
-.item > img {
- 	height: 20em;
- 	width: 100%;
- 	z-index: 1;
-}
+@media (max-width: 767px) {
+	body {
+		margin: 0em;
+		padding: 0em;
+	}
+	//share bar
+	#myLinks {
+		width: inherit;
+	}
 
-.carousel-caption {
-	background: none;
-}
+	.well-hole {
+		left: 50%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: -112px;
+	}
 
-.carousel-control {
-	margin: 0em 3em;
-}
+	//carousel
+	#myCarousel {
+		width: 100%;
+		padding: 2em 0em;
+	}
 
-//social media aggregator rebelMouse 
-.padded {
-	display: inline-block;
-	width: 90%;
-	padding: 0% 5%;
-}
-
-// main content tabs
-.nav-tabs > li > a {
-	border: 1px solid white;
-	background-color: rgba(255,255,255,.3);
-}
-
-#hideable > div > div > img {
-	width: 100%;
-}
-
-.hideable {
-	display: none;
-}
-
-div#Author {
-	display: inherit;
-}
-
-.outline_pad {
-	margin: 10%;
-	width: 80%
-}
-
-
-// footer
-.footer {
-	padding: 0% 5%;
-	width: 90%
+	.item > img {
+		max-height: 14em;
+		width: 100%;
+	}
 }
