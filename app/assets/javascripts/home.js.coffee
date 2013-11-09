@@ -13,7 +13,9 @@ ready = ->
     divvy.siblings().fadeOut( 200 , -> divvy.fadeIn(2000))
     event.preventDefault()
 
-  $('.carousel').carousel()
+  $('.carousel').carousel(
+      interval: 6000
+    )
 
   if document.documentElement.clientWidth < 768
     $('ul#tabs').removeClass('nav-tabs').addClass('nav-pills')

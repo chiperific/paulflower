@@ -13,7 +13,12 @@ body {
 	background: none;
 }
 
-.well-hole {
+.carousel-caption > h1 {
+	text-shadow: 0px 0px 20px white, -1px -1px 20px white, 1px 1px 20px white, 4px 0px 20px white, -4px 0px 20px white;
+}
+
+//social links
+.well-hole { 
 	display: block;	
 	position: fixed;
 	background: rgba(255,255,255,.7);
@@ -33,7 +38,41 @@ body {
 	color: rgb(40,80,120);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 639px) { //mobile small screens
+		body {
+		margin: 0em;
+		padding: 0em;
+	}
+	//share bar
+	#myLinks {
+		width: inherit;
+	}
+
+	.well-hole {
+		left: 50%;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		margin-left: -112px;
+	}
+
+	//carousel
+	#myCarousel {
+		width: 100%;
+		padding: 2em 0em;
+	}
+
+	.item > img {
+		max-height: 14em;
+		width: 100%;
+	}
+
+	.carousel-caption > h1 {
+		font-size: 2em;
+		margin-top: -2em;
+	}
+}
+
+@media (min-width: 640px) and (max-width: 1023px) { //old screens, tablets
 	//share bar
 	.well-hole {
 		top: 1em;
@@ -93,31 +132,10 @@ body {
 	}
 }
 
-@media (max-width: 767px) {
-	body {
-		margin: 0em;
-		padding: 0em;
-	}
-	//share bar
-	#myLinks {
-		width: inherit;
-	}
+@media (min-width: 1024px) and (max-width: 1279px) { //modern to large screens
 
-	.well-hole {
-		left: 50%;
-		margin-top: 1em;
-		margin-bottom: 1em;
-		margin-left: -112px;
-	}
+}
 
-	//carousel
-	#myCarousel {
-		width: 100%;
-		padding: 2em 0em;
-	}
-
-	.item > img {
-		max-height: 14em;
-		width: 100%;
-	}
+@media (min-width: 1280px) { //large and up screens
+	
 }
