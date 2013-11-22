@@ -5,7 +5,7 @@ gem 'rails', '4.0.0.rc1'
 gem 'bootstrap-sass', '2.1'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails", '2.2.8'
+gem "twitter-bootstrap-rails"
 gem "font-awesome-rails"
 gem 'sass-rails', '4.0.0.rc1'
 gem 'uglifier', '2.1.1'

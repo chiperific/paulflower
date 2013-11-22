@@ -27,12 +27,12 @@ body {
 	z-index: 5;
 	width: 224px;
 }
-
+//social links
 .well-hole > a {
 	margin: 0em .5em;
 	color: rgb(50,50,50);
 }
-
+//social links
 .well-hole > a:hover {
 	text-decoration: none;
 	color: rgb(40,80,120);
@@ -47,7 +47,7 @@ body {
 	#myLinks {
 		width: inherit;
 	}
-
+	//social links
 	.well-hole {
 		left: 50%;
 		margin-top: 1em;
@@ -60,9 +60,9 @@ body {
 		width: 100%;
 		padding: 2em 0em;
 	}
-
+	//carousel pictures
 	.item > img {
-		max-height: 14em;
+		height: 14em;
 		width: 100%;
 	}
 
