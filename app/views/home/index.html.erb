@@ -1,9 +1,9 @@
 <div id="myLinks" class="links">
   <p class="well-hole">
-    <%= mail_to "paulflower34@gmail.com", '<i class="icon-envelope icon-3x"></i>'.html_safe %>
-    <%= link_to '<i class="icon-facebook-sign icon-3x"></i>'.html_safe, "http://www.facebook.com/paul.flower.35", target: "blank" %>
-    <%= link_to '<i class="icon-twitter-sign icon-3x"></i>'.html_safe, "http://twitter.com/intent/follow?&screen_name=flowerpaul", target: "blank" %>
-    <%= link_to '<i class="icon-linkedin-sign icon-3x"></i>'.html_safe, "http://www.linkedin.com/pub/paul-flower/12/28/257", target: "blank" %>
+    <%= mail_to "paulflower34@gmail.com", '<i class="fa fa-envelope fa-3x"></i>'.html_safe %>
+    <%= link_to '<i class="fa fa-facebook-square fa-3x"></i>'.html_safe, "http://www.facebook.com/paul.flower.35", target: "blank" %>
+    <%= link_to '<i class="fa fa-twitter-square fa-3x"></i>'.html_safe, "http://twitter.com/intent/follow?&screen_name=flowerpaul", target: "blank" %>
+    <%= link_to '<i class="fa fa-linkedin-square fa-3x"></i>'.html_safe, "http://www.linkedin.com/pub/paul-flower/12/28/257", target: "blank" %>
   </p>
 </div><!-- /.links -->
 <div id="myCarousel" class="carousel slide">
@@ -34,8 +34,12 @@
     </div> <!-- /.item -->
   </div>
   <!-- The chevrons -->
-  <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  <a class="carousel-ctrl" href="#myCarousel" id="cctl_Left" data-slide="prev">
+    <i class="fa fa-arrow-circle-o-left fa-4x"></i>
+  </a>
+  <a class="carousel-ctrl" href="#myCarousel" id="cctl_Right"data-slide="next">
+    <i class="fa fa-arrow-circle-o-right fa-4x"></i>
+  </a>
 </div><!-- /.carousel -->
 <div class='padded row-fluid'>
   <div class='span9' id="mainContent">
@@ -51,7 +55,7 @@
           <%= link_to "Runner", "#", class: "tab", id: "Runner" %>
         </li>
         <li>
-          <%= link_to "Creative Director", "#", class: "tab", id: "CreatDir" %>
+          <%= link_to "Idiot", "#", class: "tab", id: "Idiot" %>
         </li>
       </ul>
     </div>
@@ -65,36 +69,13 @@
         </div>
       </div> <!-- ./Author -->
       <div id="Writer" class="hideable">
-        <div class="row-fluid">
-          <div class="span2">
-            <%= image_tag "dkblue-dots.jpg", class: "outline_pad" %>
-          </div>
-          <div class="span10">
-            <p>Portfolio item 1 content</p>
-          </div>
-        </div>
-        <div class="row-fluid">
-          <div class="span2">
-            <%= image_tag "blue-dots.jpg", class: "outline_pad" %>
-          </div>
-          <div class="span10">
-            <p>Portfolio item 2 content</p>
-          </div>
-        </div>
-        <div class="row-fluid">
-          <div class="span2">
-            <%= image_tag "green-dots.jpg", class: "outline_pad" %>
-          </div>
-          <div class="span10">
-            <p>Portfolio item 3 content</p>
-          </div>
-        </div>
+        <p>Senior Copywriter/Creative Director content</p>
       </div> <!-- ./Writer -->
       <div id="Runner" class="hideable">
         <p>Runner content</p>
       </div> <!-- ./Runner -->
-      <div id="CreatDir" class="hideable">
-        <p>Creative Director content</p>
+      <div id="Idiot" class="hideable">
+        <p>Idiot content</p>
       </div> <!-- ./Michigander -->
     </div> <!-- ./hideable -->
   </div> <!-- ./mainContent -->

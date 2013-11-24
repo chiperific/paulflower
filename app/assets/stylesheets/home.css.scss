@@ -17,6 +17,15 @@ body {
 	text-shadow: 0px 0px 20px white, -1px -1px 20px white, 1px 1px 20px white, 4px 0px 20px white, -4px 0px 20px white;
 }
 
+a.carousel-ctrl {
+	margin-top: 30%;
+	position: absolute;
+	top: 0;
+	color: rgba(40,80,120,.4);
+}
+
+
+
 //social links
 .well-hole { 
 	display: block;	
@@ -70,6 +79,16 @@ body {
 		font-size: 2em;
 		margin-top: -2em;
 	}
+
+	//carosel arrow positioning
+	#cctl_Left {
+		left: 8px;
+	}
+
+	#cctl_Right {
+		right: 8px;
+	}
+	
 }
 
 @media (min-width: 640px) and (max-width: 1023px) { //old screens, tablets
@@ -88,10 +107,6 @@ body {
 	 	height: 20em;
 	 	width: 100%;
 	 	z-index: 1;
-	}
-
-	.carousel-control {
-		margin: 0em 1em;
 	}
 
 	//social media aggregator rebelMouse 

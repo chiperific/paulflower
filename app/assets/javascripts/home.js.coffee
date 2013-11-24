@@ -3,13 +3,17 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 ready = ->
+  #start with only author content showing
+  authdiv = $('div#Author')
+  authdiv.siblings().fadeOut( 50 )
+  
   $('.tab').on "click", ->
+    #tab activations
     $(this).parents('ul#tabs').children('li').removeClass('active')
     $(this).parent('li').addClass('active')
+    #div content changes
     div_id = $(this).attr('id')
     divvy = $('div#' + div_id)
-    #divvy.removeClass('hidden')
-    #divvy.siblings().addClass('hidden')
     divvy.siblings().fadeOut( 200 , -> divvy.fadeIn(2000))
     event.preventDefault()
 
@@ -19,16 +23,20 @@ ready = ->
 
   if document.documentElement.clientWidth < 768
     $('ul#tabs').removeClass('nav-tabs').addClass('nav-pills')
+    $('a.carousel-ctrl').children('i').removeClass('fa-4x').addClass('fa-3x')
 
   if document.documentElement.clientWidth > 767
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
+    $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
 
 resize = ->
   if document.documentElement.clientWidth < 768
     $('ul#tabs').removeClass('nav-tabs').addClass('nav-pills')
+    $('a.carousel-ctrl').children('i').removeClass('fa-4x').addClass('fa-3x')
 
   if document.documentElement.clientWidth > 767
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
+    $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
