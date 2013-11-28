@@ -149,6 +149,12 @@ a.carousel-ctrl {
 
 @media (min-width: 1024px) and (max-width: 1279px) { //modern to large screens
 
+	.item > img {
+		height: 20em;
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+
 }
 
 @media (min-width: 1280px) { //large and up screens
