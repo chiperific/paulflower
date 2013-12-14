@@ -23,20 +23,20 @@ ready = ->
 
   if document.documentElement.clientWidth < 768
     $('ul#tabs').removeClass('nav-tabs').addClass('nav-pills')
-    $('a.carousel-ctrl').children('i').removeClass('fa-4x').addClass('fa-3x')
+  #  $('a.carousel-ctrl').children('i').removeClass('fa-4x').addClass('fa-3x')
 
   if document.documentElement.clientWidth > 767
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
-    $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
+  #  $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
 
 resize = ->
   if document.documentElement.clientWidth < 768
     $('ul#tabs').removeClass('nav-tabs').addClass('nav-pills')
-    $('a.carousel-ctrl').children('i').removeClass('fa-4x').addClass('fa-3x')
+  #  $('a.carousel-ctrl').children('i').removeClass('fa-4x').addClass('fa-3x')
 
   if document.documentElement.clientWidth > 767
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
-    $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
+  #  $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
