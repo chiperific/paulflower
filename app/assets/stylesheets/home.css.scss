@@ -15,6 +15,13 @@ body {
 div#Author {
 	display: inherit;
 }
+#hideable > div > div > img {
+	width: 100%;
+}
+
+.hideable {
+	display: none;
+}
 
 .carousel-caption {
 	background: none;
@@ -30,14 +37,12 @@ div#Author {
 
 // the chevrons
 a.carousel-ctrl {
-	margin-top: 15%;
 	position: absolute;
 	top: 0;
 	color: rgba(255,255,255,.4);
 	font-size: 120px;
 	font-weight: 100;
 }
-
 a.carousel-ctrl:hover {
 	text-decoration: none;
 	color: rgba(255,255,255,.6);
@@ -83,7 +88,7 @@ a.carousel-ctrl:hover {
 	padding: 0% 5%;
 }
 
-//bootstrap overrides
+//bootstrap overrides width of pills and tabs
 .nav-tabs > li > a,
 .nav-pills > li > a {
   margin-right: 0px !important;
@@ -111,7 +116,10 @@ a.carousel-ctrl:hover {
 		margin-left: -1.5em;
 	}
 
-	//carosel arrow positioning
+	//carosel chevron positioning
+	a.carousel-ctrl {
+		margin-top: 15%;
+	}
 	#cctl_Left {
 		left: 6px;
 	}
@@ -145,11 +153,63 @@ a.carousel-ctrl:hover {
 		margin-left: -1em;
 	}
 
-	//carosel arrow positioning
+	//carosel chevron positioning
+	a.carousel-ctrl {
+		margin-top: 11%;
+		font-size: 9em;
+	}
 	#cctl_Left {
 		left: 10px;
 	}
+	#cctl_Right {
+		right: 10px;
+	}
 
+	.item > img {
+	 	height: 20em;
+	 	width: 100%;
+	 	z-index: 1;
+	}
+
+	// main content tabs
+	#tabs > li > a {
+		border: 1px solid white;
+		background-color: rgba(255,255,255,.3);
+	}
+}
+
+@media (min-width: 1024px) { //modern to large screens
+	// Carousel not full screen width
+	#myCarousel {
+		padding: 1em 0em;
+	}
+
+	//crop carousel images
+	.carousel-inner {
+		height: 20em;
+	}
+	.item > img {
+		margin-top: -125px;
+	}
+
+	//position carousel text
+	.carousel-caption {
+		top: 310px !important;
+	}
+	.carousel-caption > h1 {
+		font-size: 3em;
+		top: 40px;
+		margin-left: -1em;
+	}
+
+	//carosel chevron positioning
+	a.carousel-ctrl {
+		margin-top: 7%;
+		font-size: 10em;
+	}
+	#cctl_Left {
+		left: 10px;
+	}
 	#cctl_Right {
 		right: 10px;
 	}
@@ -173,15 +233,4 @@ a.carousel-ctrl:hover {
 	.hideable {
 		display: none;
 	}
-}
-
-@media (min-width: 1024px) and (max-width: 1279px) { //modern to large screens
-	.item > img {
-		height: 20em;
-		margin-left: 1em;
-		margin-right: 1em;
-	}
-}
-
-@media (min-width: 1280px) { //large and up screens	
 }
