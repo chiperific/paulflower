@@ -29,7 +29,7 @@ ready = ->
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
   #  $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
 
-  if document.documentElement.clientWidth > 369
+  if document.documentElement.clientWidth > 463
     $('#Idiot').html('Opinionated Idiot')
   else
     $('#Idiot').html('Idiot')
@@ -43,7 +43,7 @@ resize = ->
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
   #  $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
 
-  if document.documentElement.clientWidth > 369
+  if document.documentElement.clientWidth > 463
     $('#Idiot').html('Opinionated Idiot')
   else
     $('#Idiot').html('Idiot')

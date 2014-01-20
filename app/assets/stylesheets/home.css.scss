@@ -58,6 +58,29 @@ a.carousel-ctrl:hover {
 	color: rgb(40,80,120);
 }
 
+// footer
+.footer {
+	padding: 0% 5%;
+	width: 90%
+}
+
+//social media aggregator rebelMouse 
+.padded {
+	display: inline-block;
+	width: 90%;
+	padding: 0% 5%;
+}
+
+//bootstrap overrides
+.nav-tabs > li > a,
+.nav-pills > li > a {
+  margin-right: 0px !important;
+}
+
+.nav > li > a {
+	padding: 11px 11px !important;
+}
+
 @media (max-width: 639px) { //mobile small screens
 		body {
 		margin: 0em;
@@ -120,13 +143,6 @@ a.carousel-ctrl:hover {
 	 	z-index: 1;
 	}
 
-	//social media aggregator rebelMouse 
-	.padded {
-		display: inline-block;
-		width: 90%;
-		padding: 0% 5%;
-	}
-
 	// main content tabs
 	#tabs > li > a {
 		border: 1px solid white;
@@ -151,11 +167,6 @@ a.carousel-ctrl:hover {
 //	}
 
 
-	// footer
-	.footer {
-		padding: 0% 5%;
-		width: 90%
-	}
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) { //modern to large screens
