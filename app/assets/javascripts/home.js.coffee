@@ -29,6 +29,11 @@ ready = ->
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
   #  $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
 
+  if document.documentElement.clientWidth > 369
+    $('#Idiot').html('Opinionated Idiot')
+  else
+    $('#Idiot').html('Idiot')
+
 resize = ->
   if document.documentElement.clientWidth < 768
     $('ul#tabs').removeClass('nav-tabs').addClass('nav-pills')
@@ -37,6 +42,11 @@ resize = ->
   if document.documentElement.clientWidth > 767
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
   #  $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
+
+  if document.documentElement.clientWidth > 369
+    $('#Idiot').html('Opinionated Idiot')
+  else
+    $('#Idiot').html('Idiot')
 
 $(document).ready(ready)
 $(document).on('page:load', ready)

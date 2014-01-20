@@ -15,6 +15,9 @@ body {
 
 .carousel-caption > h1 {
 	color: #424242;
+	margin-bottom: -1.3em !important;
+	margin-left: -1.5em !important;
+	width: 150%;
 	text-shadow: 0px 0px 20px white, -1px -1px 20px white, 1px 1px 20px white, 4px 0px 20px white, -4px 0px 20px white;
 }
 
@@ -142,10 +145,10 @@ a.carousel-ctrl:hover {
 		display: inherit;
 	}
 
-	.outline_pad {
-		margin: 10%;
-		width: 80%
-	}
+//	.outline_pad {
+//		margin: 10%;
+//		width: 80%
+//	}
 
 
 	// footer
