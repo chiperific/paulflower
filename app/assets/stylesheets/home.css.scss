@@ -7,7 +7,14 @@
 body {
  	background-image: image-url('bgpattern.png');
  	width: 100%;
- }
+	margin: 0em;
+	padding: 0em;
+}
+
+// Keeps author info from being hidden by default on page load/resize
+div#Author {
+	display: inherit;
+}
 
 .carousel-caption {
 	background: none;
@@ -15,8 +22,8 @@ body {
 
 .carousel-caption > h1 {
 	color: #424242;
-	margin-bottom: -1.3em !important;
-	margin-left: -1.5em !important;
+	margin-bottom: -1.3em;
+	margin-left: -1.5em;
 	width: 150%;
 	text-shadow: 0px 0px 20px white, -1px -1px 20px white, 1px 1px 20px white, 4px 0px 20px white, -4px 0px 20px white;
 }
@@ -45,7 +52,12 @@ a.carousel-ctrl:hover {
 	padding-left: .4em;
 	z-index: 5;
 	width: 224px;
+	left: 50%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: -112px;
 }
+
 //social links
 .well-hole > a {
 	margin: 0em .5em;
@@ -67,7 +79,7 @@ a.carousel-ctrl:hover {
 //social media aggregator rebelMouse 
 .padded {
 	display: inline-block;
-	width: 90%;
+//	width: 90%;
 	padding: 0% 5%;
 }
 
@@ -82,22 +94,6 @@ a.carousel-ctrl:hover {
 }
 
 @media (max-width: 639px) { //mobile small screens
-		body {
-		margin: 0em;
-		padding: 0em;
-	}
-	//share bar
-	#myLinks {
-		width: inherit;
-	}
-	//social links
-	.well-hole {
-		left: 50%;
-		margin-top: 1em;
-		margin-bottom: 1em;
-		margin-left: -112px;
-	}
-
 	//carousel
 	#myCarousel {
 		width: 100%;
@@ -111,7 +107,8 @@ a.carousel-ctrl:hover {
 
 	.carousel-caption > h1 {
 		font-size: 2em;
-		//margin-top: 2em;
+		margin-bottom: -1.3em;
+		margin-left: -1.5em;
 	}
 
 	//carosel arrow positioning
@@ -122,19 +119,39 @@ a.carousel-ctrl:hover {
 	#cctl_Right {
 		right: 6px;
 	}
-	
 }
 
 @media (min-width: 640px) and (max-width: 1023px) { //old screens, tablets
-	//share bar
-	.well-hole {
-		top: 1em;
-		right: 3em;
+	// Carousel not full screen width
+	#myCarousel {
+		padding: 1em 0em;
 	}
 
-	// Carousel
-	#myCarousel {
-		padding: 2em 5em;
+	//crop carousel images
+	.carousel-inner {
+		height: 20em;
+	}
+	.item > img {
+		margin-top: -75px;
+	}
+
+	//position carousel text
+	.carousel-caption {
+		top: 260px !important;
+	}
+	.carousel-caption > h1 {
+		font-size: 3em;
+		top: 40px;
+		margin-left: -1em;
+	}
+
+	//carosel arrow positioning
+	#cctl_Left {
+		left: 10px;
+	}
+
+	#cctl_Right {
+		right: 10px;
 	}
 
 	.item > img {
@@ -156,29 +173,15 @@ a.carousel-ctrl:hover {
 	.hideable {
 		display: none;
 	}
-
-	div#Author {
-		display: inherit;
-	}
-
-//	.outline_pad {
-//		margin: 10%;
-//		width: 80%
-//	}
-
-
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) { //modern to large screens
-
 	.item > img {
 		height: 20em;
 		margin-left: 1em;
 		margin-right: 1em;
 	}
-
 }
 
-@media (min-width: 1280px) { //large and up screens
-	
+@media (min-width: 1280px) { //large and up screens	
 }
