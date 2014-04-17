@@ -5,7 +5,7 @@
 ready = ->
   #start with only author content showing
   authdiv = $('div#Author')
-  authdiv.siblings().fadeOut( 50 )
+  authdiv.siblings().fadeOut(2)
   
   $('.tab').on "click", ->
     #tab activations
@@ -14,11 +14,11 @@ ready = ->
     #div content changes
     div_id = $(this).attr('id')
     divvy = $('div#' + div_id)
-    divvy.siblings().fadeOut( 200 , -> divvy.fadeIn(2000))
+    divvy.siblings().fadeOut(2, -> divvy.fadeIn(2000))
     event.preventDefault()
 
   $('.carousel').carousel(
-      interval: 6000
+      interval: 8000
     )
 
   if document.documentElement.clientWidth < 768
@@ -29,10 +29,10 @@ ready = ->
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
   #  $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
 
-  if document.documentElement.clientWidth > 463
-    $('#Idiot').html('Opinionated Idiot')
-  else
-    $('#Idiot').html('Idiot')
+  #if document.documentElement.clientWidth > 463
+  #  $('#Idiot').html('Opinionated Idiot')
+  #else
+  #  $('#Idiot').html('Idiot')
 
 resize = ->
   if document.documentElement.clientWidth < 768
@@ -43,10 +43,10 @@ resize = ->
     $('ul#tabs').removeClass('nav-pills').addClass('nav-tabs')
   #  $('a.carousel-ctrl').children('i').removeClass('fa-3x').addClass('fa-4x')
 
-  if document.documentElement.clientWidth > 463
-    $('#Idiot').html('Opinionated Idiot')
-  else
-    $('#Idiot').html('Idiot')
+  #if document.documentElement.clientWidth > 463
+  #  $('#Idiot').html('Opinionated Idiot')
+  #else
+  #  $('#Idiot').html('Idiot')
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
