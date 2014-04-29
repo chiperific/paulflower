@@ -30,9 +30,9 @@ div#Author {
 
 .carousel-caption {
 	background: none;
-	top: 130px;
+//	top: 130px;
 	left: 21% !important;
-	top: 70% !important;
+//	top: 70% !important;
 	text-align: left !important;
 	width: 40% !important;
 }
@@ -140,7 +140,7 @@ a.carousel-ctrl:hover {
 @media (min-width: 640px) and (max-width: 1023px) { //old screens, tablets
 	// Carousel not full screen width
 	#myCarousel {
-		padding: 1em 0em;
+		padding: 2em 0em;
 	}
 
 	//crop carousel images
@@ -189,7 +189,7 @@ a.carousel-ctrl:hover {
 @media (min-width: 1024px) { //modern to large screens
 	// Carousel not full screen width
 	#myCarousel {
-		padding: 1em 0em;
+		padding: 2em 0em;
 	}
 
 	//crop carousel images
