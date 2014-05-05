@@ -20,9 +20,6 @@ body {
 div#Author {
 	display: inherit;
 }
-#hideable > div > div > img {
-	width: 100%;
-}
 
 .hideable {
 	display: none;
@@ -30,18 +27,19 @@ div#Author {
 
 .carousel-caption {
 	background: none;
-//	top: 130px;
-	left: 21% !important;
-//	top: 70% !important;
-	text-align: left !important;
-	width: 40% !important;
+	left: 5% !important;
+	width: 90% !important;
+	padding: 0em !important;
 }
 
 .carousel-caption > h1 {
 	color: white;
-	font-family: 'Londrina Solid', cursive;
+	font-family: 'Alike', serif;
 	font-size: 4em;
-	text-shadow: 8px 8px 20px black;
+	text-shadow: 
+		4px 4px 2px black,
+		-1px -1px 2px black;
+	text-align: left;
 }
 
 // the chevrons
@@ -93,7 +91,6 @@ a.carousel-ctrl:hover {
 //social media aggregator rebelMouse 
 .padded {
 	display: inline-block;
-//	width: 90%;
 	padding: 0% 5%;
 }
 
@@ -113,6 +110,7 @@ a.carousel-ctrl:hover {
 		width: 100%;
 		padding: 2em 0em;
 	}
+
 	//carousel pictures
 	.item > img {
 		width: 100%;
@@ -144,12 +142,12 @@ a.carousel-ctrl:hover {
 	}
 
 	//crop carousel images
-	.carousel-inner {
-		height: 20em;
-	}
-	.item > img {
-		margin-top: -75px;
-	}
+//	.carousel-inner {
+//		height: 20em;
+//	}
+//	.item > img {
+//		margin-top: -75px;
+//	}
 
 	//position carousel text
 	.carousel-caption {
@@ -173,11 +171,6 @@ a.carousel-ctrl:hover {
 		right: 10px;
 	}
 
-	.item > img {
-	 	height: 20em;
-	 	width: 100%;
-	 	z-index: 1;
-	}
 
 	// main content tabs
 	#tabs > li > a {
@@ -187,17 +180,14 @@ a.carousel-ctrl:hover {
 }
 
 @media (min-width: 1024px) { //modern to large screens
-	// Carousel not full screen width
+	// Carousel full screen width
 	#myCarousel {
 		padding: 2em 0em;
 	}
 
-	//crop carousel images
 	.carousel-inner {
-	//	height: 20em;
-	}
-	.item > img {
-		margin-top: -125px;
+		height: auto;
+		width: 100%;
 	}
 
 	//position carousel text
@@ -207,7 +197,7 @@ a.carousel-ctrl:hover {
 	.carousel-caption > h1 {
 	//	font-size: 3em;
 	//	top: 40px;
-	//	margin-left: -1em;
+	//	margin-left: -2em;
 	}
 
 	//carosel chevron positioning
@@ -222,8 +212,9 @@ a.carousel-ctrl:hover {
 		right: 10px;
 	}
 
+// Carousel image
 	.item > img {
-	 	height: 20em;
+	// 	height: 100%;
 	 	width: 100%;
 	 	z-index: 1;
 	}
@@ -234,10 +225,7 @@ a.carousel-ctrl:hover {
 		background-color: rgba(255,255,255,.3);
 	}
 
-	#hideable > div > div > img {
-		width: 100%;
-	}
-
+	//start things hidden
 	.hideable {
 		display: none;
 	}
