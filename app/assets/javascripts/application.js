@@ -17,3 +17,14 @@
 //
 // Loads all Bootstrap javascripts
 //= require bootstrap
+
+
+$(document).ready(function() {
+  var  quotes = ["Beautifully drawn characters", "Definitely worth the read, it's a great ride.", "...one novel that does not disappoint.", "A book that carves out it's own place on your bookshelf.", "...has you hooked and won't let you go.", "...had my brain spinning out of control!"]
+  var  quote = quotes[Math.floor(Math.random()*quotes.length)]
+  var pingAfter = 5000;  
+  var refreshId = setInterval(function() {
+      $("#rand").html("\""+quote+"\"");
+      quote = quotes[Math.floor(Math.random()*quotes.length)];
+  }, pingAfter);
+});

@@ -21,6 +21,9 @@ ready = ->
       interval: 8000
     )
 
+
+
+
   if document.documentElement.clientWidth < 768
     $('ul#tabs').removeClass('nav-tabs').addClass('nav-pills')
 
