@@ -6,16 +6,15 @@
     <%= link_to '<i class="fa fa-linkedin-square fa-3x"></i>'.html_safe, "http://www.linkedin.com/pub/paul-flower/12/28/257", target: "blank" %>
   </p>
 </div><!-- /.links -->
-<div id="myCarousel" class="carousel slide">
+<div id="myCarousel" class="carousel22222 slide">
   <div class="carousel-inner">
     <div class="item active">
-      <%= image_tag "carousel_book2.png", alt: "" %>
+      <%= image_tag "carousel_book.png", alt: "" %>
       <div class="container">
         <div class="carousel-caption">
           <h1>Critics are saying:</h1>
-          <br />
-          <br />
-          <h1 id="rand">"<%= @quote[rand(6)] %>"</h1>
+          <br id="h1break"/>
+          <h1 id="rand">"<%= @quote[rand(@quote_len)] %>"</h1>
         </div> <!-- /.carousel-caption -->
       </div> <!-- /.container -->
     </div> <!-- /.item -->

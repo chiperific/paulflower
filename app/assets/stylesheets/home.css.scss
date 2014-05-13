@@ -25,17 +25,19 @@ div#Author {
 	display: none;
 }
 
+#myCarousel {
+	z-index: 1;
+}
+
 .carousel-caption {
 	background: none;
 	left: 5% !important;
-	width: 60% !important;
 	padding: 0em !important;
 }
 
 .carousel-caption > h1 {
 	color: white;
 	font-family: 'Alike', serif;
-	font-size: 4em;
 	text-shadow: 
 		4px 4px 2px black,
 		-1px -1px 2px black;
@@ -111,13 +113,21 @@ a.carousel-ctrl:hover {
 		padding: 2em 0em;
 	}
 
-	//carousel pictures
-	.item > img {
-		width: 100%;
+	//gap between "critics are saying" and quotes
+	#h1break {
+		display: none;
+	}
+	
+
+	.carousel-caption {
+		width: 100% !important;
+		padding: 0em !important;
+		bottom: 0px !important;
 	}
 
 	.carousel-caption > h1 {
-	//	font-size: 2em;
+		font-size: 1.5em;
+		font-weight: normal;
 	//	margin-bottom: -1.3em;
 	//	margin-left: -1.5em;
 	}
@@ -141,22 +151,13 @@ a.carousel-ctrl:hover {
 		padding: 2em 0em;
 	}
 
-	//crop carousel images
-//	.carousel-inner {
-//		height: 20em;
-//	}
-//	.item > img {
-//		margin-top: -75px;
-//	}
-
-	//position carousel text
-	.carousel-caption {
-	//	top: 260px !important;
+	//gap between "critics are saying" and quotes
+	#h1break {
+		display: none;
 	}
+
 	.carousel-caption > h1 {
-	//	font-size: 3em;
-	//	top: 40px;
-	//	margin-left: -1em;
+		font-size: 2em;
 	}
 
 	//carosel chevron positioning
@@ -195,7 +196,7 @@ a.carousel-ctrl:hover {
 	//	top: 310px !important;
 	}
 	.carousel-caption > h1 {
-	//	font-size: 3em;
+		font-size: 3.5em;
 	//	top: 40px;
 	//	margin-left: -2em;
 	}
