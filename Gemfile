@@ -16,6 +16,7 @@ gem 'jbuilder', '1.0.2'
 gem 'pg'
 gem 'better_errors'
 gem "binding_of_caller"
+gem 'unicorn'
 
 
 group :production do
