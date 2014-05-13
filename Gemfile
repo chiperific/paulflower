@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.1'
 
 gem 'rails', '4.0.0.rc1'
 gem 'bootstrap-sass', '2.1'
@@ -17,9 +17,6 @@ gem 'pg'
 gem 'better_errors'
 gem "binding_of_caller"
 
-group :development do
-  gem 'sqlite3', '1.3.7'
-end
 
 group :production do
   gem 'rails_12factor' #for Heroku
