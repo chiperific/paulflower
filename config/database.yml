@@ -20,3 +20,19 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: paulflower_development
+  pool: 5
+  username: chiperific
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: paulflower_production
+  pool: 5
+  username: chiperific
+  password:
