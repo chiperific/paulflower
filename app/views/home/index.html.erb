@@ -7,11 +7,17 @@
   </p>
 </div><!-- /.links -->
 <div id="myCarousel" class="carousel slide">
+  <a class="carousel-ctrl" href="#myCarousel" id="cctl_Left" data-slide="prev">
+    &lsaquo;
+  </a>
+  <a class="carousel-ctrl" href="#myCarousel" id="cctl_Right" data-slide="next">
+    &rsaquo;
+  </a>
   <div class="carousel-inner">
     <div class="item active">
       <%= image_tag "carousel_books.png", alt: "" %>
       <div class="container">
-        <div class="carousel-caption">
+        <div class="carousel-caption" id="rand-caption">
           <h1>Critics are saying:</h1>
           <br id="h1break"/>
           <h1 id="rand">"<%= @quote[rand(@quote_len)] %>"</h1>
@@ -36,12 +42,6 @@
     </div> <!-- /.item -->
   </div>
   <!-- The chevrons -->
-  <a class="carousel-ctrl" href="#myCarousel" id="cctl_Left" data-slide="prev">
-    &lsaquo;
-  </a>
-  <a class="carousel-ctrl" href="#myCarousel" id="cctl_Right" data-slide="next">
-    &rsaquo;
-  </a>
 </div><!-- /.carousel -->
 <div class='padded row-fluid'>
   <div class='span6' id="mainContent">

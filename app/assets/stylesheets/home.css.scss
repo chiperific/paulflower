@@ -29,21 +29,6 @@ div#Author {
 	z-index: 1;
 }
 
-.carousel-caption {
-	background: none;
-	left: 5% !important;
-	padding: 0em !important;
-}
-
-.carousel-caption > h1 {
-	color: white;
-	font-family: 'Alike', serif;
-	text-shadow: 
-		4px 4px 2px black,
-		-1px -1px 2px black;
-	text-align: left;
-}
-
 // the chevrons
 a.carousel-ctrl {
 	position: absolute;
@@ -51,10 +36,28 @@ a.carousel-ctrl {
 	color: rgba(255,255,255,.4);
 	font-size: 120px;
 	font-weight: 100;
+	z-index: 4 !important;
 }
 a.carousel-ctrl:hover {
 	text-decoration: none;
 	color: rgba(255,255,255,.6);
+}
+
+.carousel-caption {
+	left: 5% !important;
+	padding: 0em !important;
+	z-index: 2 !important;
+	background-color: rgba(255,255,255,0.0);
+}
+
+.carousel-caption > h1 {
+	color: white;
+	font-family: 'Alike', serif;
+//	text-shadow: 
+//		4px 4px 2px black,
+//		-1px -1px 2px black;
+	text-align: left;
+	z-index: 2
 }
 
 //social links
@@ -113,28 +116,28 @@ a.carousel-ctrl:hover {
 		padding: 2em 0em;
 	}
 
-	//gap between "critics are saying" and quotes
-	#h1break {
-		display: none;
-	}
-	
+	//Carousel #1 "critics are saying" and quotes
+	//#rand-caption {
+	//	display: none;
+	//	background-color: rgba(0,0,0,0.3); //better contrast
+	//  //would need rounded corners
+	//}
 
 	.carousel-caption {
-		width: 100% !important;
-		padding: 0em !important;
-		bottom: 0px !important;
+		display: none;
+	//	width: 100% !important;
+	//	padding: 0em !important;
+	//	bottom: 0px !important;
 	}
 
 	.carousel-caption > h1 {
 		font-size: 1.5em;
 		font-weight: normal;
-	//	margin-bottom: -1.3em;
-	//	margin-left: -1.5em;
 	}
 
 	//carosel chevron positioning
 	a.carousel-ctrl {
-		margin-top: 15%;
+		margin-top: 10%;
 	}
 	#cctl_Left {
 		left: 6px;
@@ -158,6 +161,9 @@ a.carousel-ctrl:hover {
 
 	.carousel-caption > h1 {
 		font-size: 2em;
+		text-shadow: 
+			4px 4px 2px black,
+			-1px -1px 2px black;
 	}
 
 	//carosel chevron positioning
@@ -197,8 +203,9 @@ a.carousel-ctrl:hover {
 	}
 	.carousel-caption > h1 {
 		font-size: 3.5em;
-	//	top: 40px;
-	//	margin-left: -2em;
+		text-shadow: 
+			4px 4px 2px black,
+			-1px -1px 2px black;
 	}
 
 	//carosel chevron positioning
