@@ -12,7 +12,7 @@ class HomeController < ApplicationController
       7 => "Dark, well-paced story with an unforgettable climax.",
       8 => "The more I read the harder the book was to put down.",
       9 => "Before I knew it I was completely lost in the story.",
-      10 => "I had to shake myself at the end of each chapter to remember it's only fiction."
+      10 => "I had to shake myself...to remember it's only fiction."
     }
 
     @quote_len = @quote.length
